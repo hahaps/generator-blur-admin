@@ -1,0 +1,201 @@
+[
+  {
+    "type": "list",
+    "name": "angularVersion",
+    "message": "Which version of Angular do you want?",
+    "choices": [
+      {
+        "value": "~1.5.3",
+        "name": "1.5.x (stable)"
+      }
+    ]
+  },
+  {
+    "type": "checkbox",
+    "name": "angularModules",
+    "message": "What Angular modules would you like to have? (ngRoute and ngResource will be addressed after)",
+    "choices": [
+      {
+        "value": {
+          "key": "animate",
+          "module": "ngAnimate"
+        },
+        "name": "angular-animate.js (enable animation features)",
+        "checked": true
+      },
+      {
+        "value": {
+          "key": "cookies",
+          "module": "ngCookies"
+        },
+        "name": "angular-cookies.js (handle cookie management)",
+        "checked": true
+      },
+      {
+        "value": {
+          "key": "touch",
+          "module": "ngTouch"
+        },
+        "name": "angular-touch.js (for mobile development)",
+        "checked": true
+      },
+      {
+        "value": {
+          "key": "sanitize",
+          "module": "ngSanitize"
+        },
+        "name": "angular-sanitize.js (to securely parse and manipulate HTML)",
+        "checked": true
+      },
+      {
+        "value": {
+          "key": "messages",
+          "module": "ngMessages"
+        },
+        "name": "angular-messages.js (enhanced support for displaying messages within templates)",
+        "checked": true
+      },
+      {
+        "value": {
+          "key": "aria",
+          "module": "ngAria"
+        },
+        "name": "angular-aria.js (support for common ARIA attributes)",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "name": "jQuery",
+    "message": "Do you need jQuery or perhaps Zepto?",
+    "choices": [
+      {
+        "value": {
+          "key": "jquery2"
+        },
+        "name": "jQuery 2.x (new version, lighter, IE9+)"
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "name": "resource",
+    "message": "Would you like to use a REST resource library?",
+    "choices": [
+      {
+        "value": {
+          "key": "angular-resource",
+          "module": "ngResource"
+        },
+        "name": "ngResource, the official support for RESTful services"
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "name": "router",
+    "message": "Would you like to use a router?",
+    "choices": [
+      {
+        "value": {
+          "key": "ui-router",
+          "module": "ui.router"
+        },
+        "name": "UI Router, flexible routing with nested views"
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "name": "ui",
+    "message": "Which UI framework do you want?",
+    "choices": [
+      {
+        "value": {
+          "key": "bootstrap",
+          "module": null
+        },
+        "name": "Bootstrap, the most popular HTML, CSS, and JS framework"
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "name": "bootstrapComponents",
+    "message": "How do you want to implement your Bootstrap components?",
+    "choices": [
+      {
+        "value": {
+          "key": "ui-bootstrap",
+          "module": "ui.bootstrap"
+        },
+        "name": "Angular UI Bootstrap, Bootstrap components written in pure AngularJS by the AngularUI Team"
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "name": "foundationComponents",
+    "message": "How do you want to implement your Foundation components?",
+    "choices": [
+      {
+        "value": {
+          "key": "angular-foundation",
+          "module": "mm.foundation"
+        },
+        "name": "Angular Foundation, a set of native AngularJS directives based on Foundation's markup and CSS"
+      },
+      {
+        "value": {
+          "key": "official",
+          "module": null
+        },
+        "name": "The official jQuery implementation of Foundation"
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "name": "cssPreprocessor",
+    "message": "Which CSS preprocessor do you want?",
+    "choices": [
+      {
+        "value": {
+          "key": "node-sass",
+          "extension": "scss"
+        },
+        "name": "Sass (Node), Node.js binding to libsass, the C version of the popular stylesheet preprocessor, Sass."
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "name": "jsPreprocessor",
+    "message": "Which JS preprocessor do you want?",
+    "choices": [
+      {
+        "value": {
+          "key": "noJsPrepro",
+          "extension": "js",
+          "srcExtension": "js"
+        },
+        "name": "None, I like to code in standard JavaScript."
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "name": "htmlPreprocessor",
+    "message": "Which HTML template engine would you want?",
+    "choices": [
+      {
+        "value": {
+          "key": "noHtmlPrepro",
+          "extension": "html"
+        },
+        "name": "None, I like to code in standard HTML."
+      }
+    ]
+  }
+]
